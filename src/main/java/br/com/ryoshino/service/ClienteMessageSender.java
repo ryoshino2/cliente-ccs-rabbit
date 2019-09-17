@@ -17,16 +17,14 @@ import java.util.Random;
 
 @Service
 public class ClienteMessageSender {
-    private final RabbitTemplate rabbitTemplate;
-    private final ObjectMapper objectMapper;
     @Autowired
-    private ClienteRepository clienteRepository;
+    private RabbitTemplate rabbitTemplate;
 
     @Autowired
-    public ClienteMessageSender(RabbitTemplate rabbitTemplate, ObjectMapper objectMapper) {
-        this.rabbitTemplate = rabbitTemplate;
-        this.objectMapper = objectMapper;
-    }
+    private ObjectMapper objectMapper;
+
+    @Autowired
+    private ClienteRepository clienteRepository;
 
     public void sendOrder(ClienteCcsRabbit clienteCcsRabbit) {
         try {

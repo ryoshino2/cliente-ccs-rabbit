@@ -11,11 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ClienteCcsController {
 
     @Autowired
-    private final ClienteMessageSender clienteMessageSender;
-
-    public ClienteCcsController(ClienteMessageSender clienteMessageSender) {
-        this.clienteMessageSender = clienteMessageSender;
-    }
+    private ClienteMessageSender clienteMessageSender;
 
     @PostMapping("/sendClienteCcs")
     public void enviarClienteParaORabbit(@RequestBody ClienteCcsRabbit clienteCcsRabbit) {
