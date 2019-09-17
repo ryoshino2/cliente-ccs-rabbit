@@ -1,0 +1,5 @@
+/home/ryoshino/workspace/exemplo-rabbitmq-producer/src/main/java/br/com/ryoshino/controller/ClienteCcsController.java
+/home/ryoshino/workspace/exemplo-rabbitmq-producer/src/main/java/br/com/ryoshino/Application.java
+/home/ryoshino/workspace/exemplo-rabbitmq-producer/src/main/java/br/com/ryoshino/service/ClienteMessageSender.java
+/home/ryoshino/workspace/exemplo-rabbitmq-producer/src/main/java/br/com/ryoshino/configuration/RabbitConfig.java
+/home/ryoshino/workspace/exemplo-rabbitmq-producer/src/main/java/br/com/ryoshino/model/ClienteCcsRabbit.java
